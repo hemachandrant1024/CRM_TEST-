@@ -10,3 +10,4 @@ services:
         value: 22.13.1 # Use your project's node version
       - key: PORT
         value: 10000
+    startCommand: node index.js
