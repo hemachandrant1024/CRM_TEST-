@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: crm
+    env: node
+    plan: free # Uses the free tier by default
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.1 # Use your project's node version
+      - key: PORT
+        value: 10000
